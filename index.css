@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --cool-dark-1: #212529;
+    --nice-white-1: #ffffff;
+    --bootstrap-blue:rgb(13,110,253);
+    --bootstrap-green:rgb(25,135,84);
+    --bootstrap-yellow:rgb(255,193,7);
+    --bootstrap-red:rgb(220,53,69);
+    --margin: 1rem 2rem;
+
+  }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+.top-layer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+.general-container{
+    background-color: var(--cool-dark-1);
+    color: var(--nice-white-1);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    margin: 3rem;
+    padding: 2rem;
+
+}
+.middle-layer{
+    display: flex;
+}
+.left-container{
+    display: flex;
+    flex-direction: column;
+    margin: var(--margin);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.grade-container{
+    display: flex;
+}
+.grade-buttons{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    /*  */}
+.grade-button-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.general-button{
+    background-color: var(--nice-white-1);
+    color: var(--cool-dark-1);
+    font-size: 1.2rem;
+    padding: .5rem 1rem;
+    margin: .5rem 1rem .5rem 0rem;
+    border-radius: 5px;
+    border: 2px solid var(--cool-dark-1);
+    cursor: pointer;
+}
+
+.middle-middle-container{
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    margin: var(--margin);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+
+#other-carrier-input{
+    padding: .5rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--cool-dark-1);
+}
+#color-dropdown {
+    border: none;
+    border-bottom: 2px solid var(--cool-dark-1);
+    outline: none;
+    font-size: 1.2rem;
+}
+.phone-image{
+    max-height: 500px;
+   
+}

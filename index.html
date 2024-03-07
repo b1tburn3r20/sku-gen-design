@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SKU Generator</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div>
+      <div class="top-layer">
+        <div class="general-container">
+          <p>Quantity: <span>45</span></p>
+        </div>
+        <div class="general-container">Device / IMEI info</div>
+        <div class="general-container">Message No data ETC</div>
+      </div>
+      <div class="middle-layer">
+        <div class="left-container">
+          <div class="grade-container left-segment">
+            <div class="grade-buttons">
+              <p>Screen</p>
+              <div class="grade-button-wrapper">
+                <button class="general-button">H</button>
+                <button class="general-button">M</button>
+                <button class="general-button">L</button>
+              </div>
+            </div>
+            <div class="grade-buttons">
+              <p>Frame</p>
+              <div class="grade-button-wrapper">
+                <button class="general-button">H</button>
+                <button class="general-button">M</button>
+                <button class="general-button">L</button>
+              </div>
+            </div>
+            <div class="grade-buttons">
+              <p>Back</p>
+              <div class="grade-button-wrapper">
+                <button class="general-button">H</button>
+                <button class="general-button">M</button>
+                <button class="general-button">L</button>
+              </div>
+            </div>
+          </div>
+          <div class="box-type left-segment">
+            <p>Box Type</p>
+            <div>
+              <button class="general-button">NB</button>
+              <button class="general-button">NNB</button>
+              <button class="general-button">CPOK</button>
+              <button class="general-button">CPO</button>
+              <button class="general-button">OB</button>
+            </div>
+          </div>
+          <div class="burn-levels">
+            <p>Burn Levels</p>
+            <div>
+              <button class="general-button">B2</button>
+              <button class="general-button">B3</button>
+              <button class="general-button">B4</button>
+              <button class="general-button">B5</button>
+            </div>
+          </div>
+        </div>
+        <div class="middle-middle-container">
+          <div class="middle-container">
+            <div class="storage-container">
+              <p>Storage</p>
+              <div>
+                <button class="general-button">256GB</button>
+                <button class="general-button">512GB</button>
+                <button class="general-button">1TB</button>
+              </div>
+            </div>
+          </div>
+          <div class="middle-container">
+            <p>Carrier</p>
+            <div>
+              <button class="general-button">Verizon</button>
+              <button class="general-button">AT&T</button>
+              <button class="general-button">T-Mobile</button>
+              <button class="general-button">Sprint</button>
+              <button class="general-button">Boost</button>
+              <button class="general-button">Metro PCS</button>
+            </div>
+            <input
+              id="other-carrier-input"
+              type="text"
+              placeholder="Other carrier..."
+            />
+          </div>
+          <div class="middle-container">
+            <p>Color</p>
+            <select id="color-dropdown">
+              <option value="option2">Graphite Black</option>
+
+              <option value="option1">Mint Green</option>
+              <option value="option3">Salmon Pink</option>
+            </select>
+          </div>
+          <div class="middle-container">
+            <p>Missing Parts?</p>
+            <div>
+              <button class="general-button">Sim Tray</button>
+            </div>
+          </div>
+          <div class="middle-container">
+            <p>Problem Device?</p>
+            <div>
+              <button class="general-button">Blacklist</button>
+            </div>
+          </div>
+        </div>
+        <div class="right-container">
+          <div class="middle-container">
+            <img class="phone-image" src="./images/phone_image.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="bottom-layer">
+        <p>Idk this stuff was confusing in the drawing</p>
+      </div>
+    </div>
+  </body>
+</html>
