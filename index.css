@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 :root {
     --cool-dark-1: #212529;
     --nice-white-1: #ffffff;
@@ -14,18 +16,52 @@ body {
     padding: 0;
     font-family: 'Raleway', sans-serif;
 }
+.info-p{
+    font-family: 'Quicksand', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.phone-info{
+    background-color: var(--bootstrap-blue);
+}
+.quantity{
+    background-color: var(--bootstrap-green);
+}
+.no-data{
+    background-color: var(--bootstrap-red);
+}
 .top-layer{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-}
-.general-container{
     background-color: var(--cool-dark-1);
+}
+.phone-properties{
+    display: flex;
+}
+.phone-properties-element{
+    font-size: 2rem;
+    margin: 0rem 1rem;
+    background-color: #141414;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+
+}
+.top-layer-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.general-container{
     color: var(--nice-white-1);
     border-radius: 10px;
     font-size: 1.2rem;
-    margin: 3rem;
+    margin: 1rem 3rem;
     padding: 2rem;
 
 }
@@ -36,11 +72,16 @@ body {
     display: flex;
     flex-direction: column;
     margin: var(--margin);
-    border: 2px solid rgba(0, 0, 0, 0.1);
+    /* border: 2px solid rgba(0, 0, 0, 0.1); */
 }
 
 .grade-container{
     display: flex;
+}
+
+.segment{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+
 }
 .grade-buttons{
     display: flex;
@@ -55,34 +96,61 @@ body {
 .general-button{
     background-color: var(--nice-white-1);
     color: var(--cool-dark-1);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding: .5rem 1rem;
     margin: .5rem 1rem .5rem 0rem;
     border-radius: 5px;
     border: 2px solid var(--cool-dark-1);
     cursor: pointer;
 }
+.color-buttons-container{
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: var(--cool-dark-1);
 
+}
+.color-button{
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+    margin: .5rem;
+    border: 2px solid var(--nice-white-1);
+}
+.gray{
+    background-color: #212529;
+}
+.mint{
+    background-color: mediumaquamarine;
+}
+.salmon{
+    background-color: salmon;
+}
+.lavender{
+    background-color: lavender;
+}
+.white{
+    background-color: white;
+}
 .middle-middle-container{
-    border: 2px solid rgba(0, 0, 0, 0.1);
+    /* border: 2px solid rgba(0, 0, 0, 0.1); */
     margin: var(--margin);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     /* flex-wrap: wrap; */
 }
+.middle-container{
+    padding-bottom: .5rem;
 
-#other-carrier-input{
-    padding: .5rem;
-    outline: none;
-    border: none;
-    border-bottom: 1px solid var(--cool-dark-1);
 }
-#color-dropdown {
+
+#carrier-dropdown {
+    align-self: center;
     border: none;
     border-bottom: 2px solid var(--cool-dark-1);
     outline: none;
     font-size: 1.2rem;
+    margin-top: .5rem;
 }
 .phone-image{
     max-height: 500px;

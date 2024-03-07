@@ -9,15 +9,25 @@
   <body>
     <div>
       <div class="top-layer">
-        <div class="general-container">
-          <p>Quantity: <span>45</span></p>
+        <div class="top-layer-wrapper">
+          <div class="general-container quantity">Quantity: 45</div>
+          <div class="general-container phone-info">
+            <p class="info-p">IMEI: 123456789012345</p>
+            <p class="info-p">Serial #: ABC123456789</p>
+            <p class="info-p">Mannapov</p>
+            <p class="info-p">Phone Check</p>
+          </div>
+          <div class="general-container no-data">Message No data ETC</div>
         </div>
-        <div class="general-container">Device / IMEI info</div>
-        <div class="general-container">Message No data ETC</div>
+        <div class="phone-properties">
+          <p class="phone-properties-element">Make: Samsung</p>
+          <p class="phone-properties-element">Model: Galaxy Z Flip 5</p>
+          <p class="phone-properties-element">Model #: SM-F731B</p>
+        </div>
       </div>
       <div class="middle-layer">
         <div class="left-container">
-          <div class="grade-container left-segment">
+          <div class="grade-container segment">
             <div class="grade-buttons">
               <p>Screen</p>
               <div class="grade-button-wrapper">
@@ -43,9 +53,9 @@
               </div>
             </div>
           </div>
-          <div class="box-type left-segment">
+          <div class="box-type segment">
             <p>Box Type</p>
-            <div>
+            <div class="box-type-buttons segment">
               <button class="general-button">NB</button>
               <button class="general-button">NNB</button>
               <button class="general-button">CPOK</button>
@@ -65,7 +75,7 @@
         </div>
         <div class="middle-middle-container">
           <div class="middle-container">
-            <div class="storage-container">
+            <div class="storage-container segment">
               <p>Storage</p>
               <div>
                 <button class="general-button">256GB</button>
@@ -74,7 +84,7 @@
               </div>
             </div>
           </div>
-          <div class="middle-container">
+          <div class="middle-container segment">
             <p>Carrier</p>
             <div>
               <button class="general-button">Verizon</button>
@@ -84,22 +94,23 @@
               <button class="general-button">Boost</button>
               <button class="general-button">Metro PCS</button>
             </div>
-            <input
-              id="other-carrier-input"
-              type="text"
-              placeholder="Other carrier..."
-            />
-          </div>
-          <div class="middle-container">
-            <p>Color</p>
-            <select id="color-dropdown">
-              <option value="option2">Graphite Black</option>
-
-              <option value="option1">Mint Green</option>
-              <option value="option3">Salmon Pink</option>
+            <select id="carrier-dropdown">
+              <option value="option1">Cricket Wireless</option>
+              <option value="option2">Mint Mobile</option>
+              <option value="option3">Claro</option>
             </select>
           </div>
-          <div class="middle-container">
+          <div class="middle-container segment">
+            <p>Color</p>
+            <div class="color-buttons-container">
+              <button class="color-button gray">&nbsp;</button>
+              <button class="color-button mint">&nbsp;</button>
+              <button class="color-button salmon">&nbsp;</button>
+              <button class="color-button lavender">&nbsp;</button>
+              <button class="color-button white">&nbsp;</button>
+            </div>
+          </div>
+          <div class="middle-container segment">
             <p>Missing Parts?</p>
             <div>
               <button class="general-button">Sim Tray</button>
